@@ -1,0 +1,26 @@
+.area-carrossel{
+    width: 100%;
+    overflow: hidden;
+    margin-top: 100px;
+}
+.track{
+    display: flex;
+    width: max-content;
+    animation: carrossel 10s linear infinite;
+}
+.track img{
+    height: 300px;
+    width: 300px;
+    margin-right: 20px;
+    object-fit: cover;
+    
+}
+
+@keyframes carrossel{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translate(-1280px);
+    }
+}
